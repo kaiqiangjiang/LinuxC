@@ -1,8 +1,4 @@
-/*
- *@Author	:Rocky
- *@Date		:2015-1-12
- *@Descr	:Run-Length-Decode
-*/
+ 
 #include <stdio.h>
 #include <stdlib.h>
 
