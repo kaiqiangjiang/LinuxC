@@ -1,2 +1,0 @@
-# LinuxC
-LinuxC Code
