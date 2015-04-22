@@ -1,0 +1,1 @@
+#ifndef __ADC_H_#define __ADC_Hvoid Test_ADC(void);void AD_ENABLE (void);void AD_READ(void); #endif

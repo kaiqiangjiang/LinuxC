@@ -1,0 +1,35 @@
+需要加入的文件：
+2440init.s
+2440slib.s
+2440lib.c
+
+2440addr.h
+2440lib.h
+2440slib.h
+option.h
+def.h
+
+在DebugRel Settings中设置
+Language Settings->ARM Assembler 
+				   ARM C Compiler 
+				   ARM C++ Compiler
+				   处理器类型都选为ARM920T
+Linker->ARM Linker
+Output->Linktype(Simple)
+      ->R0 Base(0x30000000)
+Options->Image entry point(0x30000000)
+Layout->Object/Symbol(2440init.o)	  
+	  ->Section(Init)
+	  
+如果要生成二进制文件,在:
+Target->Target Setting->Post-linker中选ARM fromELF
+
+AXD的设置
+Options->Configure Target
+点“Add”，找到HJTAG目录下的H-JTAG.dll，加进来，
+然后点"Congigure"
+
+写一个SDRAM初始化文件，类型为txt或ini
+Options->Configure Interface->Session File
+选择Run Configuration Script
+把SDRAM初始化文件加进来
