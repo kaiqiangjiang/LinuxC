@@ -1,0 +1,1 @@
+#ifndef __RTC_H_#define __RTC_H_void Test_RTC(void);#endif
